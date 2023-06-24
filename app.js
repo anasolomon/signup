@@ -63,7 +63,7 @@ app.post("/failure", function(req, res){
 // the code in line 10, the app.get that sends the root page 
 
 
-app.listen(3000 , function() {
+app.listen(process.env.PORT || 3000 , function() {
     console.log("Server started on port 3000");
 }); 
 
